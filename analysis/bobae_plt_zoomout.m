@@ -2,8 +2,8 @@
 % best-fit zoomed-out view
 % [param_cells,x_cells,y_cells] = zo_intp_bobae(Xsave,spacing,h0,epsilon);
 % sample: spacing = 12, h0 = 10, epsilon = .03;
-function [] = bobae_plt_zoomout(param_cells)
-%     close all
+function [] = bobae_plt_zoomout(param_cells,m)
+    close all
 
     format long 
 
@@ -69,7 +69,7 @@ function [] = bobae_plt_zoomout(param_cells)
 %     legend({'Simulation Best Fit','2/3 Time'},'Location','northwest')
     
     
-    title('Zoom-Out Best Fit Radius of Curvature','FontSize',14)
+    title(strcat('Zoom-Out Best Fit Radius of Curvature with m = ',{' '},num2str(m)),'FontSize',14)
 
 
     %Plots to make:

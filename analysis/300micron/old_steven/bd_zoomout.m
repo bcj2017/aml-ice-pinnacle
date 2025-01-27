@@ -108,7 +108,6 @@ for i = 1:lln
             datacoll(end,2) = optparamfit(1); 
             datacoll(end,3) = optparamfit(2);
             datacoll(end,4) = optparamfit(3);
-
         end
 
         % save the tracking result
